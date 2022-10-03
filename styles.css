@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.slide{
+  box-shadow: 6px 3px 5px 2px #19b5c5;
+  height: 80vh;
+  padding: 0 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  flex: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  transition: all 1s ease-in-out;
+  
+}
+h3{
+  color: #FFFFFF;
+  position: absolute;
+  margin: 0;
+  bottom: 20px;
+  left: 10px;
+  font-size: 16px;
+  
+}
+.slide.active{
+  flex: 10;
+  box-shadow: 6px 3px 5px 2px #c519b0;
+  
+}
+.slide.active h3{
+  font-size: 24px;
+  left: 20px;
+  transition: left .5s ease-in;
+}
+
+.slide:nth-child(1){
+  background-image: url('https://images.unsplash.com/photo-1656513014592-277039184fdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+}
+.slide:nth-child(2){
+  background-image: url('https://images.unsplash.com/photo-1656904889109-e59d094ab030?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+}
+.slide:nth-child(3){
+  background-image: url('https://images.unsplash.com/photo-1655669131176-c23c3a7b9bfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=712&q=80');
+}
+.slide:nth-child(4){
+  background-image: url('https://images.unsplash.com/photo-1625293961325-170b642843dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+}
+.slide:nth-child(5){
+  background-image: url('https://images.unsplash.com/photo-1652114067562-271dec4fd8f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80');
+}
